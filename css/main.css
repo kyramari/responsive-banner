@@ -8,7 +8,7 @@ html {
 
 *, *::before, *::after {
   box-sizing: inherit;
-  font-family: 'Georgia', serif;
+  font-family: Georgia, serif;
 }
 
 body {
@@ -19,18 +19,42 @@ body {
   max-width: 100%;
 }
 
-img {
-  position: relative;
-}
-
 .banner-content {
   background-color: #495562;
   color: #fff;
-  position: absolute;
 }
 
 .btn {
-  background-color: transparent;
   border-color: #97a49b;
   color: #fff;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .btn-right {
+    text-align: right;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .banner {
+    position: relative;
+    max-height: 500px;
+  }
+
+  .banner-content {
+    position: absolute;
+    bottom: 10%;
+  }
+
+  .banner-content {
+    background-color: transparent;
+  }
+
+  .btn {
+    border-color: #fff;
+  }
+
 }
